@@ -1,0 +1,357 @@
+ /*版心公共类*/
+.w {
+    width: 1190px;
+    margin: 0 auto; 
+    
+}
+ul {
+    list-style:none
+}
+.fle {
+    float: left;
+ }
+
+ .fr {
+     float: right;
+     
+ }
+ ul,h1 {
+     margin: 0;
+     padding: 0;
+ }
+
+ a {
+     text-decoration: none;/*取消下划线*/
+     font-size: 12px;
+     color: #2a2727; 
+     
+     
+ }
+ a:hover {
+     color: #ff8300;
+ }
+  /*版心公共类end*/
+   /*one*/
+  .top {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 12px;
+    color: #999999; 
+   
+  }
+  .top ul li {
+      display: inline;
+  }
+  .spase {
+    width: 1px;
+    height: 10px;
+    background-color: #999999;
+    margin: 10px 8px 0;
+}
+/*one end*/
+/*two */
+.guanggao {
+    background-color: #f40d4d;
+    height: 70px;
+    
+}
+/*twoend */
+
+ /*搜索部分 */
+.sfrt {
+    height: 120px;
+    line-height: 150px;
+    background-color: white;
+}
+
+.from {
+    width: 605px;
+    height: 35px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+.from input {
+    width: 500px;
+    height: 35px;
+    float: left;
+    border: 1px solid #ff8300;
+    border-radius: 25px 0 0 25px;
+    font-size: 12px;
+    padding-left:3px;
+
+}
+.from button{
+    width: 60px;
+    height: 39px;
+    float: left;
+    font-size: 12px;
+    color: white;
+    border-radius:  0 25px 25px 0;
+    background-color: #ff8300;
+    border: 1px solid #ff8300;
+    
+}
+.ttf {
+    position: absolute;
+    top: 125px;
+    left: 510px;
+    color: teal;
+    
+}
+
+.ttf a:active{
+    background-color: red;
+}
+
+.hotwords {
+    position: absolute;
+    top: 190px;
+    left: 510px;
+}
+ /*搜索部分end */
+
+ /*中部部分 */
+ .middle {
+     height: 560px;
+ }
+ .tto {
+     height: 30px;
+     background-color: #00ff8a;
+     margin-bottom: 10px;
+     
+ }
+ .lft {
+     font-size: 16px;
+     width: 190px;
+     height: 30px;
+     line-height: 30px;
+     float: left;
+     text-align: center;
+     color: white;
+     background-color: #ff5000;
+ }
+
+ .rgt {
+    width: 1000px;
+    height: 30px;
+    size: 24px;
+    float: left;
+    background-color: #ff7800;
+    
+
+}
+.rgt a {
+    font-size: 14px;
+    margin: 13px 13px;
+    line-height: 30px;
+    color: white;
+}
+ 
+ .lf {
+     width: 190px;
+     height: 520px;
+     float: left;
+     
+ }
+ .md {
+    width: 690px;
+    height: 520px;
+    float: left;
+    margin-left: 10px;
+    
+}
+.rg {
+    width: 290px;
+    height: 520px;
+    float: right;
+    margin-left: 10px;
+    background-color: tomato;
+}
+.lfo {
+    height: 30px;
+    background-color: #ff5000;
+}
+.pad {
+    border: 1px solid #ff5000;
+    border-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.pad li {
+    overflow: hidden;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 25px;
+    padding-right: 19px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    width: 145px;
+    color: #666;
+}
+
+.pad a {
+    margin-left: 10px;
+    
+}
+.pad li:hover {
+    background-color: rosybrown;
+}
+/*右侧部分结束*/
+.mddlf {
+    float: left;
+    width: 520px;
+    height: 280px;
+    background-color: rgb(255, 160, 71);
+}
+.mddrg {
+    float: right;
+    width: 160px;
+    height: 280px;
+    background-color: rosybrown;
+}
+.mdclf {
+    margin-top: 25px;
+    float: left;
+    width: 520px;
+    height: 200px;
+    
+}
+.bbc {
+    float: left;
+    border: 10px solid white;
+    width: 240px;
+    height: 200px;
+}
+.ccb {
+    float: left;
+    border: 10px solid white;
+    width: 240px;
+    height: 200px;
+}
+.mdcrg {
+    margin-top: 40px;
+    float: right;
+    width: 160px;
+    height: 200px;
+    
+}
+/*中间部分结束*/
+.mdert {
+    width: 290px;
+    text-align: center;
+    height: 145px;
+    font-size: 12px;
+    background-color: white;
+}
+
+
+.mdert img {
+    border-radius: 50%;
+    
+}
+
+}
+p {
+    position: absolute;
+    top:315px;
+    left: 1100px;
+    
+}
+.box {
+    width: 290px;
+    height: 240px;
+    overflow: hidden;
+    
+}
+.box ul {
+    width: 600px;
+    height: 40px;
+    margin-left: -1px;
+    list-style: none;
+}
+.box ul li {
+    float: left;
+    width: 58px;
+    height: 40px;
+    text-align: center;
+    font: 600 18px/40px "simsun";
+    cursor: pointer;
+}
+span {
+    display: none;
+    width: 290px;
+    height: 160px;
+    background-color: yellow;
+    text-align: center;
+    font: 700 100px/160px "simsun";
+}
+.show {
+    display: block;
+}
+.current {
+    background-color: yellow;
+}
+
+#tab{  
+    /* width: 498px;   */
+    height: 200px;  
+    border: 1px solid #ddd;  
+    box-shadow: 0 0 2px #ddd;  
+    /*处理超出的内容*/  
+    overflow: hidden;  
+}  
+
+/*选项卡的头部*/  
+#tab-header{  
+    background-color: #F7F7F7;  
+    height: 33px;  
+    text-align: center;  
+    position: relative;  
+}  
+#tab-header ul{  
+    width: 500px;  
+    position: absolute;  
+    left: -1px;  
+}  
+#tab-header ul li{  
+    float: left;  
+    width: 70px;  
+    height: 33px;  
+    line-height: 33px;  
+    padding: 0 1px;  
+    border-bottom: 1px solid #dddddd;  
+}  
+#tab-header ul li.selected{  
+    background-color: white;  
+    font-weight: bolder;  
+    border-bottom: 0;  
+    border-left: 1px solid #dddddd;  
+    border-right: 1px solid #dddddd;  
+    padding: 0;  
+
+}  
+
+#tab-header ul li:hover{  
+    color: orangered;  
+}  
+
+/*主要内容*/  
+#tab-content .dom{  
+    display: none;  
+}  
+
+#tab-content .dom ul li{  
+    float: left;  
+    /*background-color: red;*/  
+    margin: 15px 15px; 
+}  
+
+#tab-content .dom ul li a:hover{  
+    color: orange;  
+} 
+
+ /*中部部分结束*/
