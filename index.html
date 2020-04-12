@@ -1,3 +1,4 @@
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +15,37 @@
     window.onload = function(){   
         var titles = $('tab-header').getElementsByTagName('li');  
         var divs = $('tab-content').getElementsByClassName('dom');    
-        if(titles.length != divs.length) return;  
-        for(var i=0; i<titles.length; i++){  
-            var li = titles[i];  
-            li.id = i;  
-            li.onmousemove = function(){  
-                for(var j=0; j<titles.length; j++){  
-                    titles[j].className = '';  
-                    divs[j].style.display = 'none';  
-                }  
-                this.className = 'selected';  
-                divs[this.id].style.display = 'block';  
-            }  
-        }  
+        if(titles.length == divs.length) {
+            tab(titles,divs);
+        }
+
+        var titles_two = $('tab-header-two').getElementsByTagName('li');  
+        var divs_two = $('tab-content-two').getElementsByClassName('dom2');    
+        if(titles_two.length == divs_two.length) {
+            tab(titles_two,divs_two);
+        }
     } 
+
+    function tab(titles,divs){
+        if(titles.length != divs.length) return;  
+            for(var i=0; i<titles.length; i++){  
+                debugger;
+                var li = titles[i];  
+                li.id = i;  
+                li.onmousemove = function(){  
+                    for(var j=0; j<titles.length; j++){  
+                        titles[j].className = '';  
+                        divs[j].style.display = 'none';  
+                        debugger;
+                    }  
+                    this.className = 'selected';  
+                    debugger;
+                    divs[this.id].style.display = 'block';  
+                }  
+            }  
+    }
+
+    
     </script>
 </head>
 <body>
@@ -257,9 +275,7 @@
                     <div>
                         <img src="./images/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_50x50.jpg" alt="">
                         <p>嗨！你好</p>
-
                     </div>
-                    
                 </div>
             </div>
             
@@ -277,74 +293,41 @@
             <!--主要内容-->  
             <div id="tab-content">  
                 <div class="dom" style="display: block;">  
-                    <ul>  
-                        <li><a href="#">充话费</a></li>  
-                        <li><a href="#">充流量</a></li>  
-                        <li><a href="#">充固话</a></li>  
-                        <li><a href="#">冲宽带</a></li>  
-                    </ul>  
-
-
-                    
+                    <div id="tab-header-two">
+                        <ul>  
+                            <li><a href="#">充话费</a></li>  
+                            <li><a href="#">充流量</a></li>  
+                            <li><a href="#">充固话</a></li>  
+                            <li><a href="#">冲宽带</a></li>  
+                        </ul>  
+                    </div>
+                    <div id="tab-content-two">  
+                        <div class="dom2">  
+                            <h1>充话费内容部分</h1>
+                        </div>  
+                        <div class="dom2" style="display: none;">  
+                            <h1>充流量内容部分</h1>
+                        </div>  
+                        <div class="dom2" style="display: none;">  
+                            <h1>充固话内容部分</h1>
+                        </div> 
+                        <div class="dom2" style="display: none;">  
+                            <h1>冲宽带内容部分</h1>
+                        </div>  
+                    </div>
                 </div>  
                 <div class="dom">  
-                    <ul>  
-                        <li>  
-                            <a href="#">“全额返现”要管控啦</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">淘宝新规发布汇总(7月)</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">炒信规则调整意见反馈</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">质量相关规则近期变更</a>  
-                        </li>  
-                    </ul>  
+                  <h2>旅行内容</h2>
                 </div>  
                 <div class="dom">  
-                    <ul>  
-                        <li>  
-                            <a href="#">阿里建商家全链路服务</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">个性化的消费时代来临</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">跨境贸易是中小企业机</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">美妆行业虚假信息管控</a>  
-                        </li>  
-                    </ul>  
+                    <h2>车险内容</h2>
                 </div>  
                 <div class="dom">  
-                    <ul>  
-                        <li>  
-                            <a href="#">阿里建商家全链路服务</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">个性化的消费时代来临</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">跨境贸易是中小企业机</a>  
-                        </li>  
-                        <li>  
-                            <a href="#">美妆行业虚假信息管控</a>  
-                        </li>  
-                    </ul>  
+                    <h2>游戏内容</h2>
                 </div>  
             </div>  
         </div>
-
-
-
-         
         </div>
-        
     </div>
-    
-        
 </body>
 </html>
